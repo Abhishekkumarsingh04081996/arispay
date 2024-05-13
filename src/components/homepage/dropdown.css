@@ -1,0 +1,22 @@
+.custom-dropdown {
+  position: relative;
+}
+
+.dropdown-options {
+  position: absolute;
+  top: calc(100% + 5px); /* Adjust as needed */
+  left: 0;
+  z-index: 10; /* Adjust z-index to position above other elements */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px 0;
+  width: 200px; /* Adjust width as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-options li {
+  list-style: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}

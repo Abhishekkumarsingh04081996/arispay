@@ -1,0 +1,172 @@
+.features-container {
+  background: linear-gradient(
+    to bottom,
+    rgba(126, 167, 206, 0.103),
+    rgba(126, 167, 206, 0.055)
+  );
+}
+
+.hero-container {
+  background: url('/public/herobg.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.globe-container {
+  background: url('/public/globebg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.spot {
+  background: radial-gradient(
+    550px at calc(var(--x, 0) * 1px) calc(var(--y, 0) * 1px),
+    rgba(126, 167, 206, 0.349),
+    transparent 80%
+  );
+}
+
+.spot1 {
+  background: radial-gradient(
+    550px at calc(100% - var(--x, 0) * 2px) calc(50% - var(--y, 0) * 2px),
+    rgba(126, 167, 206, 0.349),
+    transparent 80%
+  );
+}
+
+.rotate {
+  animation: rotate 5s linear infinite;
+}
+
+.vault-image {
+  mix-blend-mode: hard-light;
+}
+
+.heartbeat {
+  animation: heartbeat 2s infinite;
+}
+
+.vibrate {
+  animation: vibrate 0.5s ease infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.absolute.right-0.bottom-0 img {
+  transform: rotate(45deg);
+  animation: heartbeat 2s infinite;
+}
+
+.aris-pay-text {
+  font-size: 1.5rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: absolute;
+  margin-left: -30px;
+  transform: rotate(270deg);
+  transform-origin: 0 0;
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, -2px);
+  }
+  40% {
+    transform: translate(2px, 2px);
+  }
+  60% {
+    transform: translate(-2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+.arispay-app {
+  animation: vibrate 0.5s ease infinite;
+}
+
+.mobile-section-bg {
+  background-blend-mode: multiply;
+  background: linear-gradient(0deg, #16345200, 38%, rgb(20 18 17 / 2%) 100%);
+}
+
+.slick-arrow,
+.slick-next {
+  height: 100px;
+  background-color: red;
+}
+
+/* Mobile App */
+
+.app-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 25px 25px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    'one center three'
+    'two center three'
+    'two center four'
+    'bottom bottom bottom';
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.center {
+  grid-area: center;
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
+
+.bottom {
+  grid-area: bottom;
+}
