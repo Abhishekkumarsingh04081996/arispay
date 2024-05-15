@@ -105,7 +105,7 @@ function ProductCard(props: IProduct) {
         <div
             data-aos={props.aos}
             className=''>
-            <div className='rounded-2xl bg-black p-5 border-t border-opacity-70 border-gray-500 border-l border-r border-opacity-70 flex flex-row h-full'>
+            <div className='rounded-3xl bg-black p-5 border-t border-opacity-70 border-gray-500 border-l border-r border-opacity-70 flex flex-row h-full'>
                 <div className='mr-4'>
                     <img
                         src={props.image}
@@ -119,7 +119,7 @@ function ProductCard(props: IProduct) {
                         {props.texts.map((e) => {
                             return (
                                 <div className='mt-1 flex flex-col'>
-                                    <span className='text-[#00F0FF] font-bold text-xl'>{e.title}</span>
+                                    <span className='text-[#00F0FF] font-bold text-xl uppercase'>{e.title}</span>
                                     <span className='text-white mt-4 text-sm font-normal text-gray-400'>{e.text}</span>
                                 </div>
                             );

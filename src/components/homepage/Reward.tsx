@@ -1,6 +1,6 @@
 import Container from "../Container";
 
-const ProductList = [
+const RewardList = [
     {
         aos: 'fade-right',
         title: 'ARIS SILVER',
@@ -42,15 +42,15 @@ export default function Rewards() {
             <Container className="min-h-screen flex flex-col items-center bg-black">
                 <div className="text-4xl text-center text-white font-normal mb-4 border-b-2 border-blue-500">Our Rewards Program</div>
 
-                <div className="mx-auto flex mt-4 bg-black w-full h-screen border-t border-opacity-70 border-gray-500 border-l border-r border-opacity-70 shadow-md rounded-lg overflow-hidden flex">
-                    {ProductList.map((product) => {
+                <div className="mx-auto flex mt-4 bg-black w-full h-screen border-t border-opacity-70 border-gray-500 border-l border-opacity-30 shadow-md rounded-3xl overflow-hidden flex">
+                    {RewardList.map((Reward) => {
                         return (
-                            <ProductCard
-                                aos={product.aos}
-                                image={product.image}
-                                title={product.title}
-                                texts={product.texts}
-                            ></ProductCard>
+                            <RewardCard
+                                aos={Reward.aos}
+                                image={Reward.image}
+                                title={Reward.title}
+                                texts={Reward.texts}
+                            ></RewardCard>
                         );
                     })}
                 </div>
@@ -59,7 +59,7 @@ export default function Rewards() {
 
     );
 }
-interface IProduct {
+interface IReward {
     aos: string;
     image: string;
     title: string;
@@ -68,10 +68,10 @@ interface IProduct {
         text: string;
     }[];
 }
-function ProductCard(props: IProduct) {
+function RewardCard(props: IReward) {
     return (
 
-        <div className="w-1/3 bg-balck text-white font-normal text-3xl text-center pt-4 border-gray-500 border-l border-r border-opacity-70">
+        <div className="w-1/3 bg-balck text-white font-normal text-3xl text-center pt-4 border-gray-500 border-r border-opacity-70">
             {props.title}
             <div className='relative bg-black h-screen w-full flex justify-center px'>
                 <div className='m-4'>
@@ -86,7 +86,7 @@ function ProductCard(props: IProduct) {
                         {props.texts.map((e) => {
                             return (
                                 <div className='mt-1 flex flex-col'>
-                                    <span className='text-[#00F0FF] font-bold text-xl text-left'>{e.title}</span>
+                                    <span className='text-[#00F0FF] font-bold text-xl text-left uppercase'>{e.title}</span>
                                     <span className='text-white mt-4 text-sm font-normal text-gray-400 text-left'>{e.text}</span>
                                 </div>
                             );

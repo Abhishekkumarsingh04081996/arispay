@@ -251,7 +251,7 @@ interface IListProps {
 function RoadmapCard(props: IListProps) {
   return (
     <div
-      className={'p-5 flex item-center flex-col border-t border-opacity-70 border-gray-500 border-l border-r border-opacity-70 border-b border-opacity-30 mb-5 transition rounded-2xl backdrop-blur-xl'}
+      className={'p-5 flex item-center flex-col  border-t border-opacity-70 border-gray-500 border-l border-r border-opacity-70 border-b border-opacity-30 mb-5 transition rounded-3xl backdrop-blur-xl'}
     >
       <div className='flex flex-row items-center gap-3'>
         <h2 className='text-blue-500 font-semibold text-2xl'>{props.title}</h2>

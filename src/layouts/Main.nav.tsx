@@ -1,10 +1,14 @@
 import Container from '../components/Container';
-import { Button } from '../components/ui/button';
+
 
 export default function MainNav() {
+  // const containerStyle = {
+  //   marginRight: '224px',
+  //   marginLeft: '224px'
+  // };
   return (
-    <nav className='fixed w-full z-50 top-5 '>
-      <Container className='border border-gray-700 backdrop-blur-sm rounded-full mx-48'>
+    <nav className='fixed w-full z-50 top-5 flex'>
+      <Container className='border border-gray-700 backdrop-blur-sm rounded-full bg-black'>
         <div className='flex justify-between items-center'>
           <div className='flex items-center'>
             <img
@@ -25,12 +29,9 @@ export default function MainNav() {
             <button className='duration-300 text-white text-lg px-6 py-2 shadow-xl rounded-full hover:bg-white hover:text-black'>
               Pricing
             </button>
-            {/* <button className='duration-300 text-white text-lg px-6 py-2 shadow-xl rounded-full hover:bg-white hover:text-black'>
-              About
-            </button> */}
           </div>
           <div>
-            <button className='border border-primary duration-300 text-white text-lg px-6 py-2 shadow-xl rounded-lg bg-primary'>
+            <button className='border border-primary duration-300 text-white text-lg px-6 py-2 shadow-xl rounded-lg bg-blue-800'>
               Sign Up Now
             </button>
           </div>
