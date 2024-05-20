@@ -37,7 +37,7 @@ const ProductList = [
         ],
     },
     {
-        image: '/assets/smartcontract.svg',
+        image: '/assets/smart.svg',
         aos: 'fade-left',
         texts: [
             {
@@ -48,7 +48,7 @@ const ProductList = [
         ],
     },
     {
-        image: '/assets/realtime.svg',
+        image: '/assets/eye.svg',
         aos: 'fade-left',
         texts: [
             {

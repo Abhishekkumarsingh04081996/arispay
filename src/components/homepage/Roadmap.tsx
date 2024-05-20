@@ -263,7 +263,7 @@ function RoadmapCard(props: IListProps) {
           <ul className='list-disc text-white'>
             <div className='mt-1'>
               <ul className="list-none">
-                <li className="before:bg-white before:rounded-full before:h-2 before:w-2 before:inline-block before:mr-2">{item.text}</li>
+                <li className="text-base before:bg-white before:rounded-full before:h-2 before:w-2 before:inline-block before:mr-2">{item.text}</li>
               </ul>
             </div>
           </ul>

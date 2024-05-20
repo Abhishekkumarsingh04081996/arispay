@@ -73,7 +73,7 @@ function RewardCard(props: IReward) {
 
         <div className="w-1/3 bg-balck text-white font-normal text-3xl text-center pt-4 border-gray-500 border-r border-opacity-70">
             {props.title}
-            <div className='relative bg-black h-screen w-full flex justify-center px'>
+            <div className='relative bg-black h-screen w-full flex justify-center'>
                 <div className='m-4'>
                     <img
                         src={props.image}
