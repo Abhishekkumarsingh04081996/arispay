@@ -6,7 +6,7 @@ export default function ArispayCard() {
             <div className=''>
                 <img
                     className='absolute top-10 left-16 h-full w-2/3'
-                    src='/arispaycard.png'
+                    src='/goldcard2.png'
                     alt=''
                 />
             </div>

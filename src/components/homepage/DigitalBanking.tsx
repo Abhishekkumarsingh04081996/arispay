@@ -21,7 +21,7 @@ export default function DigitalBanking() {
                 <div className="mx-auto bg-gray border-t border-opacity-70 border-gray-500 border-l border-r border-opacity-70 shadow-md rounded-3xl overflow-hidden flex">
                     <div className="px-4 pb-4 pt-16 mb-4">
                         <h1 className="text-white text-center font-bold text-5xl mb-2">New ERA OF<br /> DIGITAL BanKInG</h1>
-                        <p className="text-white text-xl text-center">Discover our upcoming suite of solutions, bridging traditional and digital currencies for secure, efficient transactions that empower users and businesses</p>
+                        <p className="text-white text-xl text-center font-light">Discover our upcoming suite of solutions, bridging traditional and digital currencies for secure, efficient transactions that empower users and businesses</p>
                         <form onSubmit={handleSubmit} className="space-y-4 mx-auto">
                             <input
                                 type="email"
